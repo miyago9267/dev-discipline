@@ -1,0 +1,50 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dev-discipline",
+  "description": "Spec-Driven Development toolkit for disciplined AI-assisted development",
+  "owner": {
+    "name": "Miyago",
+    "email": "miyago9267@gmail.com"
+  },
+  "metadata": {
+    "description": "SDD/TDD workflows, agents, session management, and production-hardened rules"
+  },
+  "plugins": [
+    {
+      "name": "dev-discipline",
+      "source": "./",
+      "description": "Complete SDD/TDD toolkit — 15 skills, 8 agents, 17 commands, session management scripts, markdown-lint hooks, and reverse-engineering rules",
+      "version": "1.0.0",
+      "author": {
+        "name": "Miyago",
+        "email": "miyago9267@gmail.com"
+      },
+      "homepage": "https://github.com/miyago9267/dev-discipline",
+      "repository": "https://github.com/miyago9267/dev-discipline",
+      "license": "MIT",
+      "keywords": [
+        "sdd",
+        "tdd",
+        "spec-driven",
+        "agents",
+        "skills",
+        "commands",
+        "session-management",
+        "code-review",
+        "workflow"
+      ],
+      "category": "workflow",
+      "tags": [
+        "sdd",
+        "tdd",
+        "agents",
+        "skills",
+        "commands",
+        "session-management",
+        "code-review",
+        "reverse-engineering"
+      ],
+      "strict": false
+    }
+  ]
+}

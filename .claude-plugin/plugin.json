@@ -1,0 +1,25 @@
+{
+  "name": "dev-discipline",
+  "version": "1.0.0",
+  "description": "Spec-Driven Development toolkit — SDD/TDD workflows, 8 agents, 17 commands, session management scripts, and production-hardened rules for disciplined AI-assisted development",
+  "author": {
+    "name": "Miyago",
+    "url": "https://github.com/miyago9267"
+  },
+  "homepage": "https://github.com/miyago9267/dev-discipline",
+  "repository": "https://github.com/miyago9267/dev-discipline",
+  "license": "MIT",
+  "keywords": [
+    "sdd",
+    "tdd",
+    "spec-driven",
+    "agents",
+    "skills",
+    "hooks",
+    "commands",
+    "code-review",
+    "session-management",
+    "workflow",
+    "discipline"
+  ]
+}
