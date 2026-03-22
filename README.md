@@ -7,7 +7,17 @@ Spec-Driven Development toolkit for Claude Code -- SDD/TDD workflows, agents, se
 ### Claude Code (recommended)
 
 ```bash
-claude /install-plugin https://github.com/miyago9267/dev-discipline
+# Add as marketplace source
+claude plugin marketplace add miyago9267/dev-discipline
+
+# Install
+claude plugin install dev-discipline
+```
+
+Or load directly for a single session:
+
+```bash
+claude --plugin-dir /path/to/dev-discipline
 ```
 
 ### Other AI tools
