@@ -198,7 +198,17 @@ install_project() {
 
   # SDD v2 spec structure
   mkdir -p "${target_dir}/docs/specs/_templates"
-  for tmpl in SPEC.template.md TASKS.template.md TESTS.template.md PROGRESS.template.md; do
+
+  local spec_template=""
+  if [[ -f "${SCRIPT_DIR}/templates/SPEC.template.md" ]]; then
+    spec_template="${SCRIPT_DIR}/templates/SPEC.template.md"
+  elif [[ -f "${SCRIPT_DIR}/templates/SPEC-TEMPLATE.md" ]]; then
+    spec_template="${SCRIPT_DIR}/templates/SPEC-TEMPLATE.md"
+  fi
+
+  [[ -n "${spec_template}" ]] && cp "${spec_template}" "${target_dir}/docs/specs/_templates/SPEC.template.md"
+
+  for tmpl in TASKS.template.md TESTS.template.md PROGRESS.template.md; do
     [[ -f "${SCRIPT_DIR}/templates/${tmpl}" ]] && cp "${SCRIPT_DIR}/templates/${tmpl}" "${target_dir}/docs/specs/_templates/"
   done
   ok "SDD v2 templates copied to docs/specs/_templates/"

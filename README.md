@@ -20,6 +20,8 @@ Or load directly for a single session:
 claude --plugin-dir /path/to/dev-discipline
 ```
 
+Artifact build for this repo lives at [`plugins/monika-claude`](../../../plugins/monika-claude/).
+
 ### Other AI tools
 
 ```bash
@@ -28,7 +30,8 @@ cd dev-discipline
 bash install.sh
 ```
 
-Supports: Claude Code, Codex, Gemini, Cursor, Copilot.
+For Codex plugin packaging, use [`plugins/monika-codex`](../../../plugins/monika-codex/).
+This `dev-discipline` package remains Claude-first; non-Claude installs here are lightweight AGENTS/shim setup for Codex, Gemini, Cursor, and Copilot.
 
 ### Project setup
 
